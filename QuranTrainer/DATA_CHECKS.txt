@@ -1,0 +1,3 @@
+PASS: 114 surahs and 6236 ayahs. All source words and verse markers retained across page boundaries. Single-word and whole-ayah reveal boundaries checked for every display page. No missing font glyphs.
+Total display pages: 4831
+Source SHA256: d8a8adff387f60ce3ff7dbe3238dd9b27120bfe29d8fcb07ad2e89cad37cefd4

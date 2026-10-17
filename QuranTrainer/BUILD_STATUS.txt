@@ -1,0 +1,18 @@
+Settings update verification:
+PASS: host compilation of the actual application (Arduino/display/touch/NVS calls mocked).
+PASS: original word/ayah reveal and navigation regressions across 114 surahs / 6236 ayahs.
+PASS: page layout boundaries at all three font sizes; anchor preservation on font changes.
+PASS: legacy bookmark migration; settings persistence; 30-second increments / 180-second maximum / Never.
+PASS: theme, hidden start, startup choice, confirmation cancel/confirm, calibration preservation.
+PASS: first wake press consumed, held press cannot accidentally reveal text, subsequent press works.
+PASS: disabled-PWM controls and enabled-PWM duty/slider logic in separate host builds.
+PASS: Arabic UI raster previews inspected (mock Latin text omitted from QA preview).
+Actual backlight circuit untested and intentionally disabled by default.
+ESP32-S3 default firmware cross-build: SUCCESS, Arduino ESP32 2.0.17 / espressif32 platform 6.12.0.
+Flash: 1,456,653 bytes. Static RAM: 20,676 bytes (excludes runtime framebuffer/layout).
+PWM-enabled application also cross-compiled with the ESP32-S3 compiler; driver hardware not connected or tested.
+Cached Adafruit GFX 1.12.6 / ILI9341 1.6.4 / BusIO 1.17.4 / XPT2046 revision 26b691b2c8 used for cross-build.
+Default ILI9341 branch tested. Optional ST7789 hardware untested.
+
+
+2026-10-14 battery update: previous cross-build results above refer to the original application. Battery-modified firmware NOT cross-built or hardware-tested in this session. See BATTERY_README_AR.md.
